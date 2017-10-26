@@ -13,8 +13,7 @@ class webserverHandler(BaseHTTPRequestHandler):
 				self.wfile.write(output.encode())
 				print(output)
 
-			else if:
-				if self.path.endswith("/hi"):
+			elif self.path.endswith("/hi"):
 				self.send_response(200)
 				self.send_header('Content_type', 'text/html')
 				self.end_headers()
